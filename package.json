@@ -1,12 +1,17 @@
 {
   "name": "verdaccio-hello",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple health check plugin for verdaccio",
   "main": "index.js",
   "engines": {
     "node": ">=10"
   },
-  "keywords": ["verdaccio","health-check","hello","verdaccio-"],
+  "keywords": [
+    "verdaccio",
+    "health-check",
+    "hello",
+    "verdaccio-"
+  ],
   "license": "MIT",
   "repository": "https://github.com/bruceman/verdaccio-hello",
   "author": "bruceman"
