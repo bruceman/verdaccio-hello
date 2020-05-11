@@ -4,15 +4,14 @@
  * Simple health check plugin for verdaccio
  */
 class VerdaccioMiddlewarePlugin {
-  constructor(config, options) {}
+  constructor(config, options) {
+      this.path = config.path || '/hello';
+      this.text = config.text || 'ok';
+  }
 
   register_middlewares(app, auth, storage) {
-    app.get('/hello', function (req, res) {
-      res.send('ok');
-    });
-
-    app.get('/-/hello', function (req, res) {
-        res.send('ok');
+    app.get(this.path, function (req, res) {
+      res.send(this.text);
     });
   }
 }

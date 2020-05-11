@@ -11,14 +11,15 @@ npm install verdaccio-hello
 ```
 
 ## Usage
-The plugin will register two new routes: /hello and /-/hello, and return 'ok' text when request these two urls.
+```yaml
+middlewares:
+  hello:
+    path: /hello # optional, default value is /hello
+    text: ok # optional, default value is ok
+```
 
 For example:
-http://localhost:4873/hello
-or 
-http://localhost:4873/-/hello 
-
-Both return 'ok'
+http://localhost:4873/hello  => ok
 
 
 

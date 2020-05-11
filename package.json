@@ -1,6 +1,6 @@
 {
   "name": "verdaccio-hello",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A simple health check plugin for verdaccio",
   "main": "index.js",
   "engines": {
